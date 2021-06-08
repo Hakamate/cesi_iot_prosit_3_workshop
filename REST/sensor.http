@@ -1,0 +1,24 @@
+### Variables
+@sensor = { "id": 2, "type": "beta", "datas": [1, 2, 3], "metrics": false}
+
+### Get all sensors
+get  http://localhost:5000/api/sensor
+content-type: application/json
+
+### Get specific sensor
+get  http://localhost:5000/api/sensor/{id}
+content-type: application/json
+
+### Create sensor
+post  http://localhost:5000/api/sensor/create
+content-type: application/json
+
+### Update one sensor
+put  http://localhost:5000/api/sensor/update/{id}
+content-type: application/json
+
+### Delete one sensor
+delete  http://localhost:5000/api/sensor/delete/{id}
+content-type: application/json
+
+{{sensor}}
